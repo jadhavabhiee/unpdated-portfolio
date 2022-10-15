@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/cc6f50fdb8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, Im <span>Abhishek</span><br />
+            Dilip Jadhav From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="pic.com.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Abhishek Dilip Jadhav From Kolhapur,<br />
+              Maharshtra, India. <br />
+              Strong in design and Integration with Intutive proiblem-solving
+              skills. <br />
+              Proficient in java,JAVASCRIPT,HMTL,CSS,AND BASIC DSA. <br />
+              Passionate about implementing and launching projects. <br />
+              Looking to start the career as an Entry - Level Software Engineer.
+              <br />
+              with a reputed firm driven by techn
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Web app development
+                  <br />HTML5 <br />
+                  CSS3 <br />
+                  JAVASCRIPT
+                </li>
+                <li><span>Pogramming</span><br />JAVA <br />DSA</li>
+                <li><span>Databases</span><br />MAngoDB</li>
+                <li><span>Back-end</span><br />Node.js</li>
+                <li><span>Familiar</span><br />OOPS <br />Git-Hub</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021-Current</span><br />UI/UX Design Training At
+                  Geekster Insitution
+                </li>
+                <li><span>HTML5</span><br />Expert</li>
+                <li><span>CSS3</span><br />Expert <br />DSA</li>
+                <li><span>JAVASCRIPT</span><br />Intermedate</li>
+                <li><span>JAva</span><br />Intermediate</li>
+                <li><span>DSA</span><br />Intermediate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div class="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end web development</h2>
+            <p>
+              Front-end web development is the development of the graphical user
+              interface of website. through the user of HTML, CSS,JAVASCRIPT,so
+              that users can view and interact with that websites.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-duotone fa-laptop-code"></i>
+            <h2>BackS-end web development</h2>
+            <p>
+              Back-end developers are the expert who build and maintain the
+              mechanism that process data and perform action on website.
+              Back-end developers are involved in data storage,security,and
+              other services-sides functions that you cannot see.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database</h2>
+            <p>
+              Entering Records files a database with data. once the database is
+              structured correctly , an interface is built.This interface is
+              placed between the tables and the user. Its gives the user a
+              different view of the database.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>Tic Tac Toe</h3>
+              <p>
+                This is a java based Tic-Tac_toe game. it's a text-based,
+                2-player game running in an IDE console environment.
+              </p>
+              <a href="https://jadhavabhiee.github.io/tic-tac-toe.game/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>About BitCoins</h3>
+              <p>All Information Realted to BitCoins</p>
+              <a href="https://jadhavabhiee.github.io/Bitcoin/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>All about online Eductions</h3>
+              <p>Change in education System Due to Covid 2019..</p>
+              <a href="https://jadhavabhiee.github.io/MYResonsiveWebsite/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/jadhavabhiee" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- Contact  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fas fa-paper-plane">aj112458@gmail.com</i></p>
+            <p><i class="fas fa-phone-square-alt"></i>8856818459</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/jadhav.abhishek"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/__abhiiieee__"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jadhav-abhishek"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <a href="AbhishekResumeOrg.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyrigth">
+        <p><p>Copyright © 2022| Abhishek Dilip Jadhav | All rights reserved <i class="fas fa-heart"></i></p>
+      </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw2XcSkD8DUCUbUM2Sb70tAx8rBU8jJw-Cgc18y0wGW3JnIhOsIeJ29b7fIPRakVe_a/exec'
+      const form = document.forms['submit-to-google-sheet']
+     const msg=document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML =""
+            },5000)
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
+
